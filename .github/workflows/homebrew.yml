@@ -1,0 +1,15 @@
+name: homebrew
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: macOS-latest
+    steps:
+    - name: Install docker
+      run: |
+        brew update
+        brew install docker
+
+    - name: Install out-of-tree
+      run: brew install https://raw.githubusercontent.com/jollheef/homebrew-repo/${GITHUB_SHA}/out-of-tree.rb
