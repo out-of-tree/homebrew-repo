@@ -8,6 +8,9 @@ class Docker < Requirement
   def message; <<~EOS
     docker is required; install it via:
       brew cask install docker
+
+    Note that you should start docker and wait for initialization before the docker command will appear.
+
     EOS
   end
 end
