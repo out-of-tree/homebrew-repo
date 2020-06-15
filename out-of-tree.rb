@@ -18,7 +18,7 @@ end
 class OutOfTree < Formula
   desc "out-of-tree kernel {module, exploit} development tool"
   homepage "out-of-tree.io"
-  url "https://code.dumpstack.io/tools/out-of-tree.git", :tag => "v1.2.1"
+  url "https://code.dumpstack.io/tools/out-of-tree.git", :tag => "v1.4.0"
 
   depends_on "go" => :build
 
