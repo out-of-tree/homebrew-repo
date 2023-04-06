@@ -14,4 +14,6 @@ jobs:
     - name: Install out-of-tree
       # FIXME: Installation from a GitHub commit URL is not supported anymore
       # run: brew install https://raw.githubusercontent.com/out-of-tree/homebrew-repo/${GITHUB_SHA}/out-of-tree.rb
-      run: brew install out-of-tree
+      run: |
+        brew tap out-of-tree/repo
+        brew install out-of-tree
