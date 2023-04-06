@@ -1,4 +1,4 @@
 # homebrew-repo
 
-    brew tap jollheef/repo
+    brew tap out-of-tree/repo
     brew install out-of-tree

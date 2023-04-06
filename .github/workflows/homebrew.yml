@@ -12,4 +12,4 @@ jobs:
         brew install docker
 
     - name: Install out-of-tree
-      run: brew install https://raw.githubusercontent.com/jollheef/homebrew-repo/${GITHUB_SHA}/out-of-tree.rb
+      run: brew install https://raw.githubusercontent.com/out-of-tree/homebrew-repo/${GITHUB_SHA}/out-of-tree.rb
