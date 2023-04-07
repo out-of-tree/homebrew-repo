@@ -1,29 +1,15 @@
 require "language/go"
 
-class Docker < Requirement
-  fatal true
-
-  satisfy(:build_env => false) { which("docker") }
-
-  def message; <<~EOS
-    docker is required; install it via:
-      brew cask install docker
-
-    Note that you should start docker and wait for initialization before the docker command will appear.
-
-    EOS
-  end
-end
-
 class OutOfTree < Formula
   desc "out-of-tree kernel {module, exploit} development tool"
   homepage "out-of-tree.io"
-  url "https://code.dumpstack.io/tools/out-of-tree.git", :tag => "v2.0.6"
+  url "https://code.dumpstack.io/tools/out-of-tree.git", :tag => "v2.1.0"
 
   depends_on "go" => :build
 
   depends_on "qemu"
-  depends_on Docker
+  depends_on "podman"
+  depends_on "jq"
 
   def install
     ENV["GOPATH"] = buildpath
