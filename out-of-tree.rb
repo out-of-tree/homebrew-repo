@@ -3,7 +3,7 @@ require "language/go"
 class OutOfTree < Formula
   desc "out-of-tree kernel {module, exploit} development tool"
   homepage "out-of-tree.io"
-  url "https://code.dumpstack.io/tools/out-of-tree.git", :tag => "v2.1.0"
+  url "https://code.dumpstack.io/tools/out-of-tree.git", :tag => "v2.1.1"
 
   depends_on "go" => :build
 
